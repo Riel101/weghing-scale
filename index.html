@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weighing Scale - IoT Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For the graph -->
+</head>
+<body>
+  <header>
+    <h1>IoT Weighing Scale</h1>
+    <p class="group-info">By Group 3</p>
+  </header>
+  <main>
+    <section id="current-weight">
+      <h2>Current Weight</h2>
+      <p id="weight-value">Loading...</p>
+    </section>
+    <section id="currency-value">
+      <h2>Currency Equivalent</h2>
+      <p id="currency">Loading...</p>
+    </section>
+    <section id="conversion">
+      <h2>Convert kg to Naira</h2>
+      <label for="conversion-rate">Conversion Rate (₦ per kg):</label>
+      <input type="number" id="conversion-rate" value="500" step="50">
+      <p id="converted-naira">₦ 0.00</p>
+    </section>
+    <section id="history">
+      <h2>Weight & Currency History</h2>
+      <canvas id="weightHistoryChart"></canvas> <!-- For graph -->
+    </section>
+  </main>
+  <footer>
+    <p>Powered by ESP32</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
